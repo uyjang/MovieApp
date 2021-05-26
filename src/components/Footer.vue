@@ -33,5 +33,8 @@ footer {
     display: block;
     margin-bottom: 4px;
   }
+  a {
+    color : black;
+  }
 }
 </style>

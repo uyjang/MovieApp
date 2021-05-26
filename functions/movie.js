@@ -17,7 +17,7 @@ exports.handler = async function (event) {
     if (data.Error) {
       return {
         statusCode: 400,
-        body: data.Error
+        body: data.Error //문자데이터만 반환함, 객체데이터의 경우 Json.stringify를 이용
       };
     }
     return {

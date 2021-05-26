@@ -78,7 +78,7 @@ export default {
             })
           }
         }
-      } catch ({ message }) {
+      } catch ({ message }) {// 넷리파이를 통해 브라우저를 열고 닫는 경우이므로 실제 네트워크를 사용한다. 네트워크는 하나의 객체를 반환해서 보내고 들여온다
         commit('updateState', {
           movies: [],
           message
